@@ -1,0 +1,54 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Tela inicial */
+#startScreen {
+    text-align: center;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Tela do jogo */
+#gameScreen {
+    width: 100%;
+    height: 100vh;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+/* Utilitário */
+.hidden {
+    display: none;
+}
+
+/* Cores dos elementos do jogo */
+.water { background-color: #3498db; }
+.land { background-color: #8b4513; }
+.sand { background-color: #f1c40f; }
+.grass { background-color: #2ecc71; }
+.treasure { background-color: #e74c3c; }
+.player { background-color: #9b59b6; } 
