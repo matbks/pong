@@ -1,42 +1,43 @@
-# 🎮 Caça ao Tesouro - Desafio de Programação
+# 🎮 Pong - Desafio de Programação
 
-Este é um projeto de jogo "Caça ao Tesouro" onde você, aluno, terá que implementar diferentes mecânicas e resolver desafios usando JavaScript.
+Este é um projeto de jogo Pong onde você, aluno, terá que implementar diferentes mecânicas e resolver desafios usando JavaScript.
 
 ## 📋 Sobre o Jogo
 
-O jogo consiste em um personagem que precisa encontrar um tesouro em um mapa. O mapa é representado por uma grade onde:
-- 🟦 Água (não pode passar)
-- 🟫 Terra (pode passar)
-- 🟨 Areia (pode passar, mas é mais lento)
-- 🟩 Grama (pode passar normalmente)
-- 🟥 Tesouro (objetivo final)
-- 👤 Personagem (jogador)
+O jogo é uma versão moderna do clássico Pong, onde você controla uma raquete na parte inferior da tela para rebater uma bola. O objetivo é manter a bola em jogo pelo maior tempo possível.
 
 ## 🎯 Desafios
 
-### Desafio 1: Movimentação Básica
-- Implemente a movimentação do personagem usando as teclas de seta
-- O personagem não pode sair dos limites do mapa
-- O personagem não pode passar pela água
+### Desafio 1: Sistema de Pontuação
+- Implemente um sistema de pontuação que aumenta quando a bola é rebatida
+- Adicione um contador visual na tela
+- Crie um sistema de high score que persiste entre as partidas
 
-### Desafio 2: Sistema de Pontuação
-- Implemente um sistema de pontuação
-- Ganhe pontos ao coletar itens pelo mapa
-- Perda de pontos ao passar pela areia (representando o esforço extra)
+### Desafio 2: Power-ups
+- Implemente power-ups que aparecem aleatoriamente na tela
+- Exemplos de power-ups:
+  - Aumentar o tamanho da raquete
+  - Diminuir a velocidade da bola
+  - Adicionar pontos extras
+  - Multiplicador de pontuação
 
-### Desafio 3: Inimigos
-- Adicione inimigos que se movem pelo mapa
-- Implemente colisão com inimigos
-- Crie um sistema de vidas
+### Desafio 3: Efeitos Visuais
+- Adicione efeitos visuais quando a bola colide com a raquete
+- Implemente partículas ou rastros na bola
+- Crie um sistema de cores dinâmicas que muda conforme a pontuação
 
-### Desafio 4: Power-ups
-- Implemente power-ups que dão habilidades especiais ao personagem
-- Exemplos: velocidade extra, invulnerabilidade temporária, etc.
+### Desafio 4: Dificuldade Progressiva
+- Implemente um sistema que aumenta a dificuldade com o tempo
+- Aumente gradualmente a velocidade da bola
+- Adicione obstáculos móveis na tela
+- Crie diferentes padrões de movimento para a bola
 
-### Desafio 5: Níveis
-- Crie um sistema de múltiplos níveis
-- Cada nível deve ter um mapa diferente
-- Aumente a dificuldade progressivamente
+### Desafio 5: Modos de Jogo
+- Implemente diferentes modos de jogo:
+  - Modo Clássico: jogo normal
+  - Modo Sobrevivência: velocidade aumenta constantemente
+  - Modo Zen: sem game over, focado em pontuação
+  - Modo Desafio: com obstáculos e power-ups
 
 ## 🚀 Como Começar
 
@@ -48,10 +49,11 @@ O jogo consiste em um personagem que precisa encontrar um tesouro em um mapa. O 
 ## 📝 Estrutura do Código
 
 O arquivo `game.js` contém a estrutura básica do jogo com:
-- Classe `Game` para gerenciar o estado do jogo
-- Classe `Player` para controlar o personagem
-- Classe `Map` para gerenciar o mapa
-- Funções auxiliares para renderização
+- Configurações do jogo (tamanhos, velocidades)
+- Estado do jogo (posições, controles)
+- Sistema de colisão
+- Loop principal do jogo
+- Sistema de renderização
 
 ## 💡 Dicas
 
@@ -59,6 +61,8 @@ O arquivo `game.js` contém a estrutura básica do jogo com:
 - Teste cada funcionalidade após implementá-la
 - Não tenha medo de experimentar novas ideias
 - Documente seu código com comentários
+- Use funções para organizar seu código
+- Mantenha as variáveis com nomes descritivos
 
 ## 🏆 Critérios de Avaliação
 
@@ -67,5 +71,12 @@ O arquivo `game.js` contém a estrutura básica do jogo com:
 - Criatividade nas implementações
 - Documentação do código
 - Resolução dos desafios propostos
+- Performance do jogo
+- Experiência do usuário
+
+## 🎯 Controles
+
+- Setas ← e → para mover a raquete
+- Clique no botão "Iniciar" para começar o jogo
 
 Boa sorte e divirta-se programando! 🎮✨ 
